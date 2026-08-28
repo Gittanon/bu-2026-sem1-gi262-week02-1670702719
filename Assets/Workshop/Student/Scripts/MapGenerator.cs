@@ -51,8 +51,7 @@ namespace Workshop.Student
                     if (x == -1 || y == -1 || x== rows || y == columns)
                     {
                         int r = UnityEngine.Random.Range(0,wallTiles.Length);
-                        GameObject tile = Instantiate
-                            (wallTiles[r],new Vector2(x,y), Quaternion.identity);
+                        GameObject tile = Instantiate(wallTiles[r],new Vector2(x,y), Quaternion.identity);
                     
                         tile.name = "wall" + x +"_" + y;
                     }
